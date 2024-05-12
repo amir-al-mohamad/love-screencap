@@ -1,0 +1,12 @@
+[package]
+name = "screencap"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mlua = { version = "0.9.7", features = ["luajit", "module"] }
+windows-capture = "1.1.9"
+fast_image_resize = "3.0.4"
